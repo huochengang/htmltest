@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inputtest</title>
+	<style type="text/css">
+		div{
+			height: 70px;
+			width: 500px;
+			font-size: 22px;
+		}
+		div>input,select{
+			margin-left: 15px;
+		}
+		textarea{
+			width: 390px;
+			height: 110px;
+			resize: none;
+		}
+		div:last-child{
+			margin-top: 60px;
+			margin-left: 40px;
+		}
+		div:last-child input{
+			width: 155px;
+			height: 55px;
+			font-size: 25px;
+			background-color: #d853b7;
+		}
+		div:nth-last-child(2) label{
+			vertical-align: top;
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="post">
+		<div>
+			<label for="touxiang">头像</label>
+			<input type="file" id="touxiang" value="sd"></input>
+		</div>
+		<div>
+			<label for="nicheng">昵称</label>
+			<input type="text" id="nicheng"></input>
+		</div>
+		<div>
+			<label for="xueli">学历</label>
+			<select id="xueli">
+				<option value="dazhuan">大专</option>
+				<option value="select" >本科</option>
+			</select>
+		</div>
+		<div>
+			<label for="xingbie">性别</label>
+			<input type="radio" name="sex" id="xingbie" checked="">男</input>
+			<input type="radio" name="sex" id="xingbie">女</input>
+		</div>
+		<div>
+			<label for="aihao">爱好</label>
+			<input type="checkbox" name="duoxuan" id="aihao" value="dianying" checked>电影</input>
+			<input type="checkbox" name="duoxuan" id="aihao" value="sheying" >摄影</input>
+			<input type="checkbox" name="duoxuan" id="aihao" value="yinyue" >音乐</input>
+			<input type="checkbox" name="duoxuan" id="aihao" value="yuedu" checked="">阅读</input>
+		</div>
+		<div>
+			<label for="qianming">签名</label>
+			<textarea name="qianming"></textarea>
+		</div>
+		<div>
+			<input type="button" value="保存"></input>
+		</div>
+	</form>
+</body>
+</html>
